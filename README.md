@@ -1,38 +1,49 @@
 # Penguin Fashion
 
-Penguin Fashion is a modern winter collection landing page focused on premium jackets, warm styling, and a polished storefront experience.
+A responsive winter-jacket collection landing page built with HTML, CSS, and vanilla JavaScript.
 
-## Project Overview
-This project includes:
-- Hero banner with strong winter branding
-- Product collection section for women and men
-- Benefits section highlighting fit, exchange, and support
-- Contact & Live Support section with a styled message form
-- Responsive layout for desktop and mobile screens
+## Project structure
 
-## Tech Stack
-- HTML5
-- CSS3
-- Vanilla JavaScript
+```text
+penguin-fashion/
+├── assets/
+│   └── images/               # Hero and product images
+├── css/
+│   ├── base.css              # Theme variables, reset, and shared layout
+│   ├── header-hero.css       # Header, navigation, hero, and image frames
+│   ├── products-benefits.css # Product collections and benefits section
+│   ├── contact.css           # Contact section and form
+│   ├── footer.css            # Footer
+│   └── responsive.css        # Breakpoints and reduced-motion styles
+├── js/
+│   └── main.js               # Mobile navigation and missing-image handling
+├── index.html
+└── README.md
+```
 
-## Local Preview
-Run the project locally with:
+The page loads the CSS files separately from `index.html` in the order listed above. This keeps styles organized by section while preserving the original custom-CSS design. No CSS framework, package installation, or build step is required.
+
+## Run locally
+
+From the project folder, start a static web server:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open:
-
-```text
-http://localhost:8000/
-```
+Open [http://localhost:8000](http://localhost:8000) in a browser.
 
 ## Deployment
-This project is hosted and deployed through Vercel.
 
-- GitHub: https://github.com/najirhussain029/penguin-fashion
-- Vercel: https://penguin-fashion-topaz.vercel.app/
+- **GitHub repository:** [najirhussain029/penguin-fashion](https://github.com/najirhussain029/penguin-fashion)
+- **Vercel site:** [penguin-fashion-topaz.vercel.app](https://penguin-fashion-topaz.vercel.app/)
 
-## Notes
-This repository contains the front-end implementation for the Penguin Fashion landing page and is ready for further product updates or UI enhancements.
+The project is a static site and can be deployed to Vercel with the project root as its root directory and no build command or output directory.
+
+## Page sections
+
+- Responsive navigation and winter collection hero
+- Women's and men's jacket collections
+- Shopping benefits
+- Contact and live support form
+- Contact details in the footer
