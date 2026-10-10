@@ -61,17 +61,24 @@ An internet connection is needed for the Google Fonts stylesheet to load.
 
 ## Assets
 
-The hero and product image files are kept in `assets/images/`. The project includes:
+All image files are kept in `assets/images/`.
+
+**From the provided Figma design:**
+
+- `jacket-4.png`
+- `jacket-5.png`
+- `jacket-6.png`
+
+**Sourced externally from Google Images or websites:**
 
 - `hero-man.png`
 - `women-denim-jacket.png`
 - `women-hooded-jacket.png`
 - `women-purple-jacket.png`
-- `jacket-4.png`
-- `jacket-5.png`
-- `jacket-6.png`
 
-The original image source URLs or attribution details were not provided.
+The external images are demo content for this learning project. I do not claim ownership of them. The exact original image URLs and website names were not provided.
+
+The icons and illustrations are made with emojis and CSS-drawn shapes; no icon library is used.
 
 ## Design customizations
 
