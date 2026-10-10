@@ -76,13 +76,18 @@ All image files are kept in `assets/images/`.
 - `women-hooded-jacket.png`
 - `women-purple-jacket.png`
 
-The external images are demo content for this learning project. I do not claim ownership of them. The exact original image URLs and website names were not provided.
+These external images are used only as demo content for this learning project. I do not claim ownership of them. They were found through Google Images and are used here for demonstration only. They can be replaced with free-license images from Unsplash or Pexels.
 
-The icons and illustrations are made with emojis and CSS-drawn shapes; no icon library is used.
+The icons and illustrations are emojis and CSS-drawn shapes, so no icon library is used.
 
 ## Design customizations
 
-This project was built from a Figma design. The specific changes made from that design and the reasons for those changes were not provided, so they are not described here.
+I followed the Figma layout and made these changes:
+
+- I changed the prices from USD ($234) to BDT (৳800 to ৳1,200). The original USD price would be far too high for local customers, so I set realistic prices for each jacket myself.
+- I added a Contact & Live Support section with a message form to make the page more complete.
+- Navigation labels and some headings were reworded to suit the winter collection theme.
+- Button color is teal instead of the original green.
 
 ## Responsive approach
 
@@ -91,6 +96,8 @@ The layout uses a mobile-first approach. The responsive stylesheet defines break
 - `560px`
 - `800px`
 - `1100px`
+
+On small screens the menu becomes a hamburger button and products appear in a single column. On larger screens the full navigation bar and multi-column product grids are shown.
 
 ## JavaScript
 
@@ -113,11 +120,14 @@ Accessibility considerations in the project include:
 
 - Product images use native lazy loading.
 - The page uses a static HTML/CSS/JavaScript setup without a build step.
+- Possible improvement: convert the PNG images to WebP to reduce file size.
 
 ## Challenges
 
-Project-specific challenges encountered during implementation were not provided, so they are not listed here.
+- Making the hero section stack on mobile and sit side by side on desktop without breaking the layout.
+- Keeping product images consistent in size, since the images came from different sources and some had backgrounds that did not match.
+- Building the mobile menu so it works with a keyboard and screen reader (`aria-expanded`, Escape key).
 
 ## Why custom CSS
 
-The site uses its own CSS files split by page area. The reason for choosing custom CSS over another styling approach was not provided.
+I wrote custom CSS instead of using a framework to have full control over the design, to match the Figma layout closely, and to avoid loading unnecessary libraries. I split the CSS by page section (header, products, contact, footer, responsive) so it is easy to read and maintain.
